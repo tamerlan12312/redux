@@ -1,0 +1,81 @@
+html{
+    overflow-x: hidden;
+}
+
+.box{
+    transform: translate(42%,50%);
+}
+
+.box2{
+    margin-left: 45%;
+    margin-top: 20%;
+}
+
+
+.gradient {
+	width: 100vw;
+	height: 120vh;
+	background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+	background-size: 280% 280%;
+	animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.boxLogin{
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    transform: translate(475px,40px);
+    border-radius: 20px;
+    img{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    span{
+        color: #000;
+        margin-left: 80px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .boxInput{
+        transform: translateY(50px);
+        input{
+            transform: translate(105px,20px);
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #000;
+        color: #000;
+        &:focus{
+            color: #000;
+            outline: 0;
+        }
+        }
+        .fa-envelope{
+            color: #000;
+            transform: translate(85px,20px);
+        }
+        .fa-eye{
+            color: #000;
+            transform: translate(85px,20px);
+        }
+        .sigin{
+            transform: translate(-60px,100px);
+        }
+        .fa-eye-slash{
+            color: #000;
+            transform: translate(85px,20px);
+        }
+    }
+}
